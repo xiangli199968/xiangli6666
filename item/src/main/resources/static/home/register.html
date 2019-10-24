@@ -22,7 +22,7 @@
 	function sendMobileCode() {
 		var phone = $("#phone").val();
 		var TrueOrFalse = confirm("是否确定发送");
-		if (phone == "") {
+		if (phone == "phone") {
 			$("#register").empty();
 			$("#register").append("手机号码不能为空！");
 			return;

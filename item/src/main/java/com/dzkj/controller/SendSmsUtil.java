@@ -28,8 +28,8 @@ public class SendSmsUtil {
 	        request.setAction("SendSms");
 	        request.putQueryParameter("RegionId", "cn-hangzhou");
 	        request.putQueryParameter("PhoneNumbers", phone);// 手机号码
-	        request.putQueryParameter("SignName", "潇潇鸿帝");// 签名名称
-	        request.putQueryParameter("TemplateCode", "SMS_171858659");//模板CODE
+	        request.putQueryParameter("SignName", "爱豆小小只");// 签名名称
+	        request.putQueryParameter("TemplateCode", "SMS_171858681");//模板CODE
 	        // 随机生成6为数字的验证码
 	        String code = "";
 	        Random ran = new Random();
@@ -97,7 +97,7 @@ public class SendSmsUtil {
 	        request.putQueryParameter("RegionId", "cn-hangzhou");
 	        request.putQueryParameter("PhoneNumbers", phone);// 手机号码
 	        request.putQueryParameter("SignName", "电科快乐购");// 签名名称
-	        request.putQueryParameter("TemplateCode", "SMS_168730401");//模板CODE
+	        request.putQueryParameter("TemplateCode", "SMS_168730362");//模板CODE
 	        request.putQueryParameter("TemplateParam", "{'name':'"+username+"'}");// 验证码内容,以json格式传递,键为模板中的名字
 	        try {
 	            CommonResponse response = client.getCommonResponse(request);
